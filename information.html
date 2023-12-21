@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Wordle</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Titan One' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <script src="wordle.js"></script>
+    <script src="https://kit.fontawesome.com/6d6a0cbceb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Maven Pro' rel='stylesheet'>
+</head>
+
+<body class="container">
+
+    <!--navigation bar-->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg">
+            <a href="wordle.html" id="wordle">
+                <i id="logo" class="fa-solid fa-gamepad"></i>
+            </a>
+            <h2 class="align-self-center">WORDLE</h2>
+            <ul class="navbar-nav mr-auto">
+                <li>
+                    <i onclick="myFunction()" class="fa-solid fa-moon"></i>
+                </li>
+                <li>
+                    <a href="information.html" id="info-link">
+                        <i class="fa-solid fa-circle-info" id="info-icon"></i>
+                    </a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-square-poll-vertical"></i>
+                </li>
+                <li>
+                    <div class="accordion">
+                        <div class="accordion-header" onclick="toggleAccordion()">
+                            <i class="fa-solid fa-list"></i>
+                        </div>
+                        <div class="accordion-body" id="accordion-body">
+                            <p>accordion</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="paragraph">
+        <h1>Wordle Nedir? Nasıl Ortaya Çıktı</h1>
+        <p>
+            Wordle, <b>Josh Wardle</b> tarafından geliştirilen web tabanlı bir tahmin ve bulmaca oyunu. İsmini de
+            geliştiricisinin soyisminin uyarlamasından alıyor.<br>
+            Oyunda <b>her gün yenilenen 5 harfli bir kelime </b>bulunuyor ve oyuncular da bunu tahmin etmeye çalışıyor.
+            Bu kelime herkes için aynı. Her oyuncunun günlük olarak toplam 6 tahmin hakkı bulunuyor.<br>
+        </p>
+        <h1>Wordle Nedir: Oyunun Ortaya çıkışı</h1>
+        <p>Wardle, aslında oyunu en başında sevgilisi ile beraber oynamak için oluşturdu. Daha sonra 2021'in Ekim ayında
+            herkese açık hale getirdi. Ardından Wardle, oyuncuların günlük sonuçlarını bir emoji olarak kopyalama
+            özelliğini geliştirdi. Bu da Twitter'da çokça paylaşıldı ve Aralık ayında popüler hale geldi. </p>
+        <h1>Wordle Oyununun Hızla Yayılması </h1>
+        <p>Geçtiğimiz Kasım ayında, Wordle oyununu oynayan kişi sayısı yalnızca 90'dı. Fakat şu an bu sayı <b>2 milyonu
+                aşmış durumda.</b><br>
+            Wordle oyunu, 2022'nin Ocak ayında <b>The New York Times Company </b>tarafından satın alındı. Ne kadara
+            satıldığı
+            bilinmiyor fakat başlangıçta tüm oyuncular için ücretsiz olarak oynanabileceği açıklandı.</p>
+        <h1>Wordle Türkçe Nasıl Oynanır: Wordle Renkleri Ne Anlama Geliyor?</h1>
+        <p>Wordle oyununda oyuncuları yönlendirmek amacuyla <b>yeşil, sarı ve gri</b> renkleri kullanılıyor. Oyunda her
+            rengin bir anlamı var. </p>
+        <h2>Wordle Yeşil Kutu</h2>
+        <p>Oyunda tahmininizden sonra yeşile dönen kutucuklar, o harfin kelimede <b>var olduğunu ve doğru yerde
+                durduğunu </b>gösteriyor. </p>
+        <h2>Wordle Sarı Kutu</h2>
+        <p>Sarı kutu ise harfin kelimede <b>var olduğunu fakat yanlış yerde durduğunu</b> söylüyor.</p>
+        <h2>Wordle Gri Kutu</h2>
+        <p>Gri kutuda bulunan harf ise günün kelimesinin içinde bulunmayan harf oluyor. </p>
+    </div>
+</body>
+
+</html>

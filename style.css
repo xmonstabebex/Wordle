@@ -1,0 +1,309 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap);
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
+
+a {
+  color: black;
+}
+
+.dark-mode a {
+  color: white;
+}
+
+/*hover dark mode*/
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.win,
+.lost {
+  display: none;
+  background-color: #c1bdb3;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  width: 15%;
+  text-align: center;
+  font-family: "maven pro";
+  position: relative;
+  left: 550px;
+}
+
+nav {
+  margin: 10px;
+  margin-bottom: 0px;
+  align-items: center;
+}
+
+.accordion-header {
+  cursor: pointer;
+}
+
+.accordion-body {
+  display: none;
+  background-color: black;
+  color : white;
+  padding : 2px;
+  padding-bottom : 0px;
+}
+
+
+.show {
+  display: block;
+}
+
+nav #logo {
+  position: relative;
+  left: -50px;
+  margin-left: 0px;
+  margin-right: 20px;
+}
+
+nav h2 {
+  position: relative;
+  left: 520px;
+  font-family: 'Titan One';
+  font-size: 30px;
+}
+
+nav ul {
+  margin-left: 40px;
+  position: relative;
+  left: 930px;
+}
+
+nav li {
+  margin: 10px;
+}
+
+#load-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#load-container h1 {
+  font-size: 70px;
+}
+
+#load-container button {
+  border: 0;
+  outline: 0;
+  font-size: 30px;
+  padding: 5px 50px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#load-container button:hover {
+  transform: scale(1.2);
+}
+
+#game-container {
+  display: none;
+}
+
+h1 {
+  font-family: 'Titan One';
+}
+
+.blanks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.cell {
+  border: 1px solid black;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.dark-mode .cell {
+  border: 1px solid white;
+}
+
+.load-container .h2 {
+  display: none;
+}
+
+input {
+  border: 1px solid black;
+  border-radius: 10px;
+  position: relative;
+  left: 432px;
+  margin: 20px;
+  box-shadow: 5px 5px black;
+}
+
+.dark-mode input {
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+  box-shadow: 5px 5px;
+}
+
+#game-container .submit {
+  border: 1px solid black;
+  border-radius: 10px;
+  position: relative;
+  left: 400px;
+  margin: 20px;
+  box-shadow: 5px 5px black;
+  background-color: white;
+  color: #333533;
+  font-size: 20px;
+  padding: 5px;
+  transition: .5s ease-out;
+}
+
+#game-container .submit:hover {
+  background-color: #ccd5ae;
+}
+
+.dark-mode #game-container .submit {
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+  box-shadow: 5px 5px white;
+}
+
+
+.keyboard-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.keyboard-row button {
+  border: 0;
+  outline: 0;
+  background-color: rgb(129, 131, 132);
+  border-radius: 5px;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 15px;
+  margin: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.keyboard-row button:hover {
+  background-color: rgb(110, 110, 110);
+  transform: scale(1.05);
+}
+
+.enter {
+  width: 90px !important;
+}
+
+.key {
+  width: 40px;
+}
+
+.del {
+  width: 70px !important;
+}
+
+.paragraph {
+  margin-top: 30px;
+  background-color: #FFF;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.paragaph::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient(to bottom, #000000 0%, #FFFFFF 100%);
+  opacity: 0.2;
+  transform: skewY(-12deg);
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  font-family: "Maven Pro";
+}
+
+.paragraph h2 {
+  font-size: 30px;
+  font-family: 'Titan One';
+}
+
+.dark-mode .paragraph {
+  background-color: black;
+  color: white;
+  box-shadow: 0px 0px 10px 2px white;
+}
+
+@media(max-width :1400px) {
+  nav ul {
+    position: relative;
+    left: 830px;
+    margin-left: 10px;
+  }
+
+  nav h2 {
+    left: 440px;
+  }
+
+  .cell {
+    width: 45px;
+    height: 45px;
+  }
+
+  .blanks {
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+
+  nav {
+    margin: 0px;
+  }
+
+  input {
+    position: relative;
+    left: 430px;
+    margin: 10px;
+    font-size: 20px;
+  }
+}
